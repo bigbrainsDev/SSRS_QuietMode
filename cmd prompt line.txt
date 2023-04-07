@@ -1,0 +1,8 @@
+-- Change the path to where configure_QuietMode.ps1 locate (C:\Users\Sean\Desktop\configure_QuietMode.ps1) in my case
+
+cd C:\Users\<User1>\Desktop
+
+-- Change the DisableQuietMode to "true" to disable Quiet Mode
+-- Change the DisableQuietMode to "false" to enable Quiet Mode
+
+powershell -ExecutionPolicy Bypass -File .\configure_QuietMode.ps1 -DisableQuietMode "true"
