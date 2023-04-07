@@ -3,15 +3,9 @@
 # Step 1: Save the below PowerShell file in a location, Example: Desktop 
 
 PowerShell 
-
-param ( 
-
-    [string]$DisableQuietMode = "false" 
-
-) 
-
- 
- 
+param (
+    [string]$IsQuietMode = "false"
+)
 
 # Load the config file 
 
@@ -37,7 +31,7 @@ $config.Save("C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\Repo
 
  
 
-# Note that the script assumes the config file is located at C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\rsreportserver.config You may need to adjust the path to match your system. 
+Note that the script assumes the config file is located at C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\rsreportserver.config You may need to adjust the path to match your system. 
 
  
 # Step 2: Run command prompt in “Run as Administrator”: 
